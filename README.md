@@ -42,7 +42,7 @@ By substituting our definitions into the differential equation, we get its discr
 
 After shifting the indices to range from $n$ to $n-2$, the discretized form of our equation reads:
 ```math
-\big( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \big) u_{n-2} + \big( \frac{2\mu}{\Delta x^2} \big) u_{n-1} + \big( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \big)u_n = 0
+\Bigg( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \Bigg) u_{n-2} + \Bigg( \frac{2\mu}{\Delta x^2} \Bigg) u_{n-1} + \Bigg( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \Bigg)u_n = 0
 ```
 
 $$u_0= y(a) \quad u_n = y(b), \quad x\in(a,b)$$
