@@ -31,7 +31,7 @@ Let $u_i$ be the numerical solution and $y$ be our analytical solution
 
 Inspired from the limit definition of the derivative, we can define our derivatives as such using a central difference: 
 
-$$\partial_tC=\vec\nabla\cdot(\mu\vec\nabla C-\vec vC) + R​$$
+$$\partial^2_tC=\vec\nabla\cdot(\mu\vec\nabla C-\vec vC) + R​$$
 
 By substituting our definitions into the differential equation, we get its discretized form.
 ## Derivation of Matrix-Vector Product form
