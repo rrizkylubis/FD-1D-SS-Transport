@@ -11,11 +11,9 @@ An intuitive example of this equation is oil contaminating a river. $C$ is the c
 This project will look at the simple case—one dimension, there are no sources or sinks, and that the state of the system is currently at equilibrium (i.e. $\partial_t C=0$). Dealing this simple case provides a basis for graduating to more complex cases, as well dealing with the generalized transport equation. 
 
 Under these conditions the equation now reads:
-
 $$-\mu \frac{d^2C}{dx^2}+v\frac{dC}{dx}=0$$
 
 Which is a classic second order, linear differential equation. This project will consider the boundary value problem of this equation:
-
 $$-\mu \frac{d^2 y}{dx^2} + \beta \frac{dy}{dx}=0 $$
 
 $$ y(0)=0 \quad y(1)=1 , \quad \mu>0, \quad \beta > 0 \quad x\in(0,1) \quad \mu,\beta\in\mathbb{R}$$
