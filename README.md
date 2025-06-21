@@ -30,7 +30,6 @@ Finite differences is a numerical method where instead of letting the function $
 Let $u_i$ be the numerical solution and $y$ be our analytical solution
 
 Inspired from the limit definition of the derivative, we can define our derivatives as such using a central difference:
-
 $$(\partial^2_{x}u)_i = \frac{u_{i+1}-2u_{i}+u_{i-1}}{\Delta x^2}$$
 
 $$(\partial_xu)_i=\frac{u_{i+1}-u_{i-1}}{2\Delta x}$$
