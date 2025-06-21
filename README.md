@@ -49,7 +49,7 @@ $$u_0= y(a) \quad u_n = y(b), \quad x\in(a,b)$$
 
 While computationally, one can iterate over the range of the index, due to the nature of the boundary conditions, it is not ideal. Mathematically it is easier to convert this problem into a linear algebra problem. Upon inspection we can see that this is really a $n\times n$ system of equations for the range of the index. In matrix form:
 
-![Matrix Equation](Matrix1.svg)
+![Matrix Equation](Matrix1.png)
 
 This form allows for easier implementation of the boundary conditions:
 
