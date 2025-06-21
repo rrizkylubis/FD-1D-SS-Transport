@@ -1,4 +1,3 @@
-
 # Finite Differences Applied to 1D Steady State Convection Diffusion Equation
 ## Introduction
 
@@ -14,7 +13,6 @@ This project will look at the simple case—one dimension, there are no sources 
 Under these conditions the equation now reads:
 
 $$-\mu \frac{d^2C}{dx^2}+v\frac{dC}{dx}=0$$
-
 
 Which is a classic second order, linear differential equation. This project will consider the boundary value problem of this equation:
 
