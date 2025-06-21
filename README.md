@@ -53,36 +53,12 @@ While computationally, one can iterate over the range of the index, due to the n
 
 This form allows for easier implementation of the boundary conditions:
 
-$$ \left[ \begin{matrix} \left( \frac{1}{\Delta x^2} \right) & 0\\
-
-\left( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \right) & \left( \frac{2\mu}{\Delta x^2} \right) & \left( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \right) \\
-
-& \ddots & \ddots & \ddots \\
-
-& & \ddots & \ddots &\ddots \\
-
-& & & \left( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \right) & \left( \frac{2\mu}{\Delta x^2} \right) & \left( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \right) \\
-
-& & & & 0 & \left( \frac{1}{\Delta x^2} \right)
-
-\end{matrix}\right] \left[ \begin{matrix} u_0 \\ \vdots \\ \vdots \\ u_n \end{matrix}\right] = \left[ \begin{matrix} \frac{y(a)}{\Delta x^2} \\ 0 \\ \vdots \\ 0 \\ \frac{y(b)}{\Delta x^2} \end{matrix}\right]$$
-
+![Matrix Equation](Matrix2.png)
 
 Recall that $y(a)=0$ and $y(b)=1$:
 
-$$ \left[ \begin{matrix} \left( \frac{1}{\Delta x^2} \right) & 0\\
+![Matrix Equation](Matrix3.png)
 
-\left( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \right) & \left( \frac{2\mu}{\Delta x^2} \right) & \left( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \right) \\
-
-& \ddots & \ddots & \ddots \\
-
-& & \ddots & \ddots &\ddots \\
-
-& & & \left( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \right) & \left( \frac{2\mu}{\Delta x^2} \right) & \left( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \right) \\
-
-& & & & 0 & \left( \frac{1}{\Delta x^2} \right)
-
-\end{matrix}\right] \left[ \begin{matrix} u_0 \\ \vdots \\ \vdots \\ u_n \end{matrix}\right] = \left[ \begin{matrix} 0 \\ 0 \\ \vdots \\ 0 \\ \frac{1}{\Delta x^2} \end{matrix}\right]$$
 Our differential equation has been reduced to a simple Matrix vector product:
 
 $$A(\Delta x)\vec{u}=\vec{b}(\Delta x)$$
