@@ -41,9 +41,9 @@ By substituting our definitions into the differential equation, we get its discr
 ## Derivation of Matrix-Vector Product form
 
 After shifting the indices to range from $n$ to $n-2$, the discretized form of our equation reads:
-
-$$\left( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \right) u_{n-2} + \left( \frac{2\mu}{\Delta x^2} \right) u_{n-1} + \left( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \right)u_n = 0$$
-
+```math
+\left( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \right) u_{n-2} + \left( \frac{2\mu}{\Delta x^2} \right) u_{n-1} + \left( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \right)u_n = 0
+```
 $$u_0= y(a) \quad u_n = y(b), \quad x\in(a,b)$$
 
 While computationally, one can iterate over the range of the index, due to the nature of the boundary conditions, it is not ideal. Mathematically it is easier to convert this problem into a linear algebra problem. Upon inspection we can see that this is really a $n\times n$ system of equations for the range of the index. In matrix form:
