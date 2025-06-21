@@ -47,8 +47,8 @@ $$ \left( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \right) u_{n-2} + \l
 $$u_0= y(a) \quad u_n = y(b), \quad x\in(a,b)$$
 
 While computationally, one can iterate over the range of the index, due to the nature of the boundary conditions, it is not ideal. Mathematically it is easier to convert this problem into a linear algebra problem. Upon inspection we can see that this is really a $n\times n$ system of equations for the range of the index. In matrix form:
-
-$$\left[ \begin{matrix}
+```math
+\left[ \begin{matrix}
 
 \left( \frac{2\mu}{\Delta x^2} \right) & \left( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \right) & & & \\
 
@@ -74,7 +74,8 @@ $$ \left[ \begin{matrix} \left( \frac{1}{\Delta x^2} \right) & 0\\
 
 & & & & 0 & \left( \frac{1}{\Delta x^2} \right)
 
-\end{matrix}\right] \left[ \begin{matrix} u_0 \\ \vdots \\ \vdots \\ u_n \end{matrix}\right] = \left[ \begin{matrix} \frac{y(a)}{\Delta x^2} \\ 0 \\ \vdots \\ 0 \\ \frac{y(b)}{\Delta x^2} \end{matrix}\right]$$
+\end{matrix}\right] \left[ \begin{matrix} u_0 \\ \vdots \\ \vdots \\ u_n \end{matrix}\right] = \left[ \begin{matrix} \frac{y(a)}{\Delta x^2} \\ 0 \\ \vdots \\ 0 \\ \frac{y(b)}{\Delta x^2} \end{matrix}\right]
+```
 
 Recall that $y(a)=0$ and $y(b)=1$:
 
