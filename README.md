@@ -58,8 +58,8 @@ While computationally, one can iterate over the range of the index, due to the n
 
 & & & \left( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \right) & \left( \frac{2\mu}{\Delta x^2} \right)
 
-\end{matrix} \right] \left[ \begin{matrix} u_0 \\ \vdots \\ \vdots\\u_n \end{matrix}\right] = \left[ \begin{matrix} 0 \\ \vdots \\0 \end{matrix}\right]$$
-
+\end{matrix} \right] \left[ \begin{matrix} u_0 \\ \vdots \\ \vdots\\u_n \end{matrix}\right] = \left[ \begin{matrix} 0 \\ \vdots \\0 \end{matrix}\right]
+```
 This form allows for easier implementation of the boundary conditions:
 
 $$ \left[ \begin{matrix} \left( \frac{1}{\Delta x^2} \right) & 0\\
@@ -74,8 +74,8 @@ $$ \left[ \begin{matrix} \left( \frac{1}{\Delta x^2} \right) & 0\\
 
 & & & & 0 & \left( \frac{1}{\Delta x^2} \right)
 
-\end{matrix}\right] \left[ \begin{matrix} u_0 \\ \vdots \\ \vdots \\ u_n \end{matrix}\right] = \left[ \begin{matrix} \frac{y(a)}{\Delta x^2} \\ 0 \\ \vdots \\ 0 \\ \frac{y(b)}{\Delta x^2} \end{matrix}\right]
-```
+\end{matrix}\right] \left[ \begin{matrix} u_0 \\ \vdots \\ \vdots \\ u_n \end{matrix}\right] = \left[ \begin{matrix} \frac{y(a)}{\Delta x^2} \\ 0 \\ \vdots \\ 0 \\ \frac{y(b)}{\Delta x^2} \end{matrix}\right]$$
+
 
 Recall that $y(a)=0$ and $y(b)=1$:
 
