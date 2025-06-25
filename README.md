@@ -86,8 +86,12 @@ $$f''(x)=\frac{f(x+\Delta x)-2f(x)+f(x-\Delta x)}{\Delta x^2}-\Delta x^2\frac{f^
 
 $$\xi_1\in(x,x+\Delta x) \quad \xi_2\in(x-\Delta x,x)$$
 
-As we can see, the first term in each of our derivatives is our numerical derivative. The second term is the remainder given via Taylor's Theorem, and it is dependent on $\Delta x^2$. This means the error of our numerical solution is $O(\Delta x^2)$, as we halve the discretization interval, our numerical approximation gets four times better. Below is an example where $\beta = 10, \quad \mu = 1$, with each discretization interval being halved. 
+As we can see, the first term in each of our derivatives is our numerical derivative. The second term is the remainder given via Taylor's Theorem, and it is dependent on $\Delta x^2$. This means the error of our numerical solution is $O(\Delta x^2)$, as we halve the discretization interval, our numerical approximation gets four times better. Below is an example where $\beta = 10, \quad \mu = 1$, with each discretization interval being halved. Code can be found in [CD_Error_Calculation.ipynb](CD_Error_Calculation.ipynb).
 
 <p align="center">
-  <img src="Numerical_Solution_B10.png" width="500">
+  <img src="Error_Fit.png" width="500">
 </p>
+
+While the center scheme finite difference is convergent to $O(\Delta x^2)$ it is important to note that the numerical solution is conditionally stable, i.e. oscillations are present under certain conditions leading to no similarity to the analytical solution. The condition for stability is:
+
+$$\frac{|\beta|\Delta x}{2\mu}<1$$
