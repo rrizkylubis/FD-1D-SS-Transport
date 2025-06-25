@@ -73,7 +73,7 @@ $$y(x)=\frac{e^{\beta x/\mu}-1}{e^{\beta/\mu}-1}$$
 
 In [Convection_Diffusion_Solver.ipynb](Convection_Diffusion_Solver.ipynb) the numerical solution is computed and compared graphically to the analytical solution for a few values of $\beta$, $\mu$ was set to 1. Below is $\beta = 10, \quad \Delta x = 0.005$
 
-[](Numerical_Solution_B10.png)
+![Numerical_Solution_B10.png](Numerical_Solution_B10.png)
 
 Via Taylor Expansion and Taylor's remainder theorem of each term of our numerical derivatives we can obtain the local truncation error of our central difference derivatives:
 
