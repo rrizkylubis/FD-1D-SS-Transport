@@ -45,7 +45,7 @@ After shifting the indices to range from $n$ to $n-2$, the discretized form of o
 \Bigg( \frac{-\mu}{\Delta x^2} - \frac{\beta}{2\Delta x} \Bigg) u_{n-2} + \Bigg( \frac{2\mu}{\Delta x^2} \Bigg) u_{n-1} + \Bigg( \frac{-\mu}{\Delta x^2} + \frac{\beta}{2\Delta x} \Bigg)u_n = 0
 ```
 
-$$u_0= y(a) \quad u_n = y(b), \quad \mu > 0, \quad \beta > 0, x\in(a,b)$$
+$$u_0= y(a) \quad u_n = y(b), \quad \mu > 0, \quad \beta > 0, \quad x\in(a,b)$$
 
 While computationally, one can iterate over the range of the index, due to the nature of the boundary conditions, it is not ideal. Mathematically it is easier to convert this problem into a linear algebra problem. Upon inspection we can see that this is really a $n\times n$ system of equations for the range of the index. In matrix form:
 
