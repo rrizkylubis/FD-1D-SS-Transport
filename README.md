@@ -68,4 +68,5 @@ where $A$ and $\vec{b}$ is a matrix and vector respectively, dependent on the di
 ## Errors and Stability
 
 The analytical solution to the boundary value problem is:
+
 $$y(x)=\frac{e^{\beta x/\mu}-1}{e^{\beta/\mu}-1}$$
