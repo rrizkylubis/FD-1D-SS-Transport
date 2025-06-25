@@ -71,4 +71,4 @@ The analytical solution to the boundary value problem is:
 
 $$y(x)=\frac{e^{\beta x/\mu}-1}{e^{\beta/\mu}-1}$$
 
-In [[Convection_Diffusion_Solver.ipynb]] the numerical solution is computed and compared graphically to the analytical solution for a few values of $\beta$, $\mu$ was set to 1.
+In [Convection_Diffusion_Solver.ipynb](Convection_Diffusion_Solver.ipynb) the numerical solution is computed and compared graphically to the analytical solution for a few values of $\beta$, $\mu$ was set to 1.
