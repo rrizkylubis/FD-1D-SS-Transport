@@ -72,3 +72,16 @@ The analytical solution to the boundary value problem is:
 $$y(x)=\frac{e^{\beta x/\mu}-1}{e^{\beta/\mu}-1}$$
 
 In [Convection_Diffusion_Solver.ipynb](Convection_Diffusion_Solver.ipynb) the numerical solution is computed and compared graphically to the analytical solution for a few values of $\beta$, $\mu$ was set to 1.
+
+The analytical solution to the boundary value problem is:
+$$y(x)=\frac{e^{\beta x/\mu}-1}{e^{\beta/\mu}-1}$$
+
+Via Taylor Expansion and Taylor's remainder theorem of each term we can obtain the local truncation error of our central difference derivatives:
+
+
+$$f'(x) = \frac{f(x+\Delta x)-f(x-\Delta x)}{2 \Delta x}-\Delta x^2 \frac{f'''(\xi_1)+f'''(\xi_2)}{12}$$
+
+$$f''(x)=\frac{f(x+\Delta x)-2f(x)+f(x-\Delta x)}{\Delta x^2}-\Delta x^2\frac{f^{(4)}(\xi_1)+f^{(4)}(\xi_2)}{24}$$
+
+$$\xi_1\in(x,x+\Delta x) \quad \xi_2\in(x-\Delta x,x)$$
+As we can see, the first term in each of our derivatives is our numerical derivative. The second term is the remainder given via Taylor's Theorem, and it is dependent on $\Delta x^2$. This means the error of our numerical solution is $O(\Delta x^2)$, as we halve the discretization interval, our numerical approximation gets four times better. 
