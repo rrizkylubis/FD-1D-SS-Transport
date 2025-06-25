@@ -81,4 +81,5 @@ $$f'(x) = \frac{f(x+\Delta x)-f(x-\Delta x)}{2 \Delta x}-\Delta x^2 \frac{f'''(\
 $$f''(x)=\frac{f(x+\Delta x)-2f(x)+f(x-\Delta x)}{\Delta x^2}-\Delta x^2\frac{f^{(4)}(\xi_1)+f^{(4)}(\xi_2)}{24}$$
 
 $$\xi_1\in(x,x+\Delta x) \quad \xi_2\in(x-\Delta x,x)$$
+
 As we can see, the first term in each of our derivatives is our numerical derivative. The second term is the remainder given via Taylor's Theorem, and it is dependent on $\Delta x^2$. This means the error of our numerical solution is $O(\Delta x^2)$, as we halve the discretization interval, our numerical approximation gets four times better. 
