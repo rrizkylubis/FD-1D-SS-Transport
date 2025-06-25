@@ -95,3 +95,9 @@ As we can see, the first term in each of our derivatives is our numerical deriva
 While the center scheme finite difference is convergent to $O(\Delta x^2)$ it is important to note that the numerical solution is conditionally stable, i.e. oscillations are present under certain conditions leading to no similarity to the analytical solution. The condition for stability is:
 
 $$\frac{|\beta|\Delta x}{2\mu}<1$$
+
+Below we can see two different scenarios, one not meeting the stability condition and the other meeting the condition due to the difference in discretization interval. We can see oscillations present in the one not meeting the stability condition. In practical regards, so long as the discretization interval is sufficiently large and computational power is available, the stability condition is not a matter of worry.
+
+<p align="center">
+  <img src="Ossilations.png" width="500"> <img src="No_Ossilations.png" width="500">
+</p>
